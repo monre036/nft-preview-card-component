@@ -22,4 +22,59 @@ ul {
 body {
     margin: 0;
     font-family: sans-serif;
+    background: #0D192C;
+    color: #8BACD9;
 }
+
+.main {
+    padding: 25px;
+}
+
+.card {
+    background: #15263F;
+    padding: 25px;
+    width: 327px;
+    height: 543px;
+    border-radius: 15px;
+}
+
+.card-image {
+    border-radius: 8px;
+}
+
+.white {
+    color: white;
+}
+
+.card-title {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.card-text {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-value-box {}
+
+.card-value {}
+
+.green {}
+
+.card-time-box {
+    display: flex;
+}
+
+.card-footer {}
+
+.avatar-image {}
+
+.card-creation {}
