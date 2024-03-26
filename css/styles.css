@@ -38,8 +38,40 @@ body {
     border-radius: 15px;
 }
 
-.card-image {
+.card-image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     border-radius: 8px;
+}
+
+.card-image-container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 255 248 / 0.5);
+    opacity: 0;
+}
+
+@media (hover: hover) {
+    .card-image-container:hover::before {
+        opacity: 1;
+    }
+
+    .card-image-container:hover .icon {
+        opacity: 1;
+    }
+}
+
+.card-image {
+    display: flex;
+}
+
+.icon {
+    position: absolute;
 }
 
 .white {
@@ -61,20 +93,55 @@ body {
 .card-info {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #2E405A;
+    padding-bottom: 16px;
 }
 
-.card-value-box {}
+.card-value-box {
+    display: flex;
+    justify-content: space-between;
+    width: 88.48px;
+    height: 19px;
+}
 
-.card-value {}
+.card-value {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
 
-.green {}
+.green {
+    color: #00FFF8;
+}
 
 .card-time-box {
     display: flex;
+    justify-content: space-between;
+    width: 92.69px;
+    height: 19px;
 }
 
-.card-footer {}
+.card-time {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
 
-.avatar-image {}
+.card-footer {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
 
-.card-creation {}
+.avatar-image {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.card-creation {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
