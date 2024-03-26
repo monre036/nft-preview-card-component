@@ -59,10 +59,12 @@ body {
 @media (hover: hover) {
     .card-image-container:hover::before {
         opacity: 1;
+        cursor: pointer;
     }
 
     .card-image-container:hover .icon {
         opacity: 1;
+        cursor: pointer;
     }
 }
 
@@ -82,6 +84,13 @@ body {
     font-family: "Outfit", sans-serif;
     font-weight: 600;
     font-size: 22px;
+}
+
+@media (hover: hover) {
+    .card-title:hover {
+        color: #00FFF8;
+        cursor: pointer;
+    }
 }
 
 .card-text {
@@ -128,9 +137,10 @@ body {
 }
 
 .card-footer {
-    padding-top: 16px;
+    padding-top: 10px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 0.375rem;
 }
 
 .avatar-image {
@@ -144,4 +154,12 @@ body {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
     font-size: 15px;
+}
+
+@media screen and (width >=768px) {
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
 }
